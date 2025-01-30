@@ -12,7 +12,7 @@
 		<div class="gradient gradient-02 opacity-60"></div>
 		<div class="gradient gradient-03 opacity-60"></div>
 	</div>
-	<div class="test absolute h-full w-full bg-center bg-repeat"></div>
+	<div class="test absolute hidden h-full w-full bg-center bg-repeat lg:flex"></div>
 </div>
 
 <style>
