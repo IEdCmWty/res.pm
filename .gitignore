@@ -4,4 +4,4 @@
 # NOTE But not these files...
 !.gitignore
 !.github
-!build
+!build/*
