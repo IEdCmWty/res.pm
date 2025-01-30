@@ -17,7 +17,7 @@
 
 <style>
 	.test {
-		background-image: url('./assets/001.png');
+		background-image: url('./assets/001.webp');
 	}
 	.wrapper {
 		position: absolute;
