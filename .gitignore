@@ -49,23 +49,3 @@ yarn-error.log*
 .npmrc
 bun.lockb
 
-e2e
-messages
-project.inlang
-src
-static
-.dockerignore
-drizzle.config.js
-jsconfig.js
-package.json
-vite.config.js
-tailwind.config.js
-svelte.config.js
-jsconfig.json
-docker_file
-eslint.config.js
-playwright.config.js
-postcss.config.js
-.prettierignore
-.prettierrc
-README.md
