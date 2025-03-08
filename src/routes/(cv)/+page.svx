@@ -1,0 +1,95 @@
+<svelte:head>
+  <title>Artem Attvud | CV</title>
+  <meta name="description" content="Senior Front-End Developer | Senior UX/UI Designer | 15 Years of Experience"/>
+</svelte:head>
+
+Senior Front-End Developer with 6+ years of experience in building scalable web applications. Strong expertise in Next.js, React, and TypeScript. Passionate about performance optimization, testing automation, and frontend architecture
+
+# Personal information
+
+|                    |              |
+|--------------------|--------------|
+| Creative pseudonym | Artem Attvud |
+| Date of birth      | 1992.05.29   |
+| Nationality        | Ukrainian    |
+| Current location   | Argentina    |
+
+## Languages
+|           |        |
+|-----------|--------|
+| English   | B1     |
+| Ukrainian | Native |
+| Russian   | Native |
+
+# Senior Front-End Developer. 6 Years of experience
+
+## Qualifications and skills
+
+|              |                                                                                                              |
+|--------------|--------------------------------------------------------------------------------------------------------------|
+| JavaScript   | Node JS, Bun JS, Typescript, ES6, ES7, ES8, ES9, ES10, ES11, Babel                                           |
+| Frameworks   | Next.js: (App router, Page router, React Server Components (RSC)), Svelte-kit                                |
+| Libs         | React, Vite, Svelte, Zod, DayJS, MUI, Ant design, Apollo client, React hook forms, MobX, Redux Toolkit       |
+| Task runners | Rollup, Esbuild, Webpack                                                                                     |
+| Testing      | Vitest, Jest, React testing library, React test renderer                                                     |
+| Styling      | Tailwind CSS, CSS5, SCSS, SASS, CSS Modules, Styled Components, Emotion, Styled JSX, Material UI, Ant Design |
+| Network      | REST API, GraphQL                                                                                            |
+| Databases    | S3, SQLite, MongoDB, MySQL                                                                                   |
+| And more     | Redis, Drizzle ORM, Github actions, CI/CD, Podman/Docker, Git (CLI)                                          |
+
+## Achievements
+
+- Developed and launched 5 major projects from scratch. One of them is a CRM system for 2000+ users. The latest stacks: Bun JS, Svelte, Svelte-kit, REST API, Redis, S3, SQLite, Vite, Vitest / Next JS (app router), React, Apollo Client, React hook forms, Vite, Vitest / Next JS (page router), React, Apollo Client, React hook forms, Vite, Vitest
+- Successfully worked as the technical lead for one of four teams to build a project that consisted of six CRM systems
+- Implemented in many projects: design systems, templates for quick start front-end development and UI libraries
+- Initiated and implemented automated screenshot testing (not snapshot testing) and automatic performance testing of JS utility libraries
+
+## Experience
+
+- Front-End Techlead in "Wezom" - 2022-2025
+  - Led a team of 2 developers
+  - Primarily developed an HRM system, but also participated in the development of two other CRM systems within one project
+  - Integrated automated screenshot testing, reducing UI regression bugs by 20%'
+  - Stack: Next.js, React, Typescript, Apollo Client, React hook forms, Vite, Vitest, Jest
+- Senior Front-End Developer in "Wezom" - 2022-2022
+  - Contributed to the development of a CRM system as part of a leading team
+  - Stack: Next.js, React, Typescript, Apollo Client, React hook forms, Vite, Vitest, Jest
+- Middle Front-End Developer in "Pixoft" - 2019-2022
+  - Held two roles simultaneously: Front-End Tech Lead and UX/UI Team Lead
+  - Managed a team of two developers and one designer
+  - Responsible for implementing an adaptive design system and creating a library of UI components based on it
+  - Developed two CRM systems with the team
+  - Stack: Next.js, React, Typescript, React hook forms, Storybook
+
+# Senior UX/UI Designer (no more). 9 Years of experience
+
+## Qualifications and skills
+
+- Creation and support of the most complex adaptive design systems
+- Validated experience and knowledge in UX/UI analysis and design for complex web applications and enterprise solutions
+- User experience research
+- Conversion optimization
+- Interaction with a team of designers & developers. Strict quality control
+- Excellent knowledge of wireframing and prototyping tools (such as Figma)
+- Excellent knowledge in modern design patterns
+
+## Achievements
+
+- Leveraged UX/UI expertise to create highly usable and accessible interfaces
+- Developed a design system builder capable of imitating any approach to create user interfaces (iOS, Android, etc.) or serve as a basis for creating a unique, maximally flexible design system
+- Designed UX/UI for industry-leading products that later became market leaders
+- Gained deep expertise in various UI design approaches across multiple platforms
+- Created projects from the very beginning to a fully working product. UX/UI (with adaptive design system integration). Front-End (React + own component library with integrated design system and documentation)
+
+## Experience
+
+ |                                              |           |
+ |----------------------------------------------|-----------|
+ | UX/UI Teamlead in "Pixoft                    | 2018-2019 |
+ | Senior UX/UI Designer in "Spartan"           | 2017-2018 |
+ | Senior UX/UI Designer in "Upwork" & "Fiver"  | 2015-2017 |
+ | Middle UX/UI Designer on freelance exchanges | 2010-2015 |
+
+# Recommendations
+
+My recommendations are available on my LinkedIn profile page - https://www.linkedin.com/in/artem-attvud/

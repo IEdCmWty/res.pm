@@ -1,0 +1,49 @@
+{
+	"name": "002__fe",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite dev && build:tailwind:watch",
+		"build": "bunx --bun vite build && svelte-kit sync && svelte-package && npm run build:tailwind",
+		"build:tailwind": "npx @tailwindcss/cli -i ./src/app.css -o ./dist/style.css",
+		"prepare": "bunx --bun prettier --write . && eslint . && svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"test": "bunx --bun test:integration && bunx --bun test:unit && bunx --bun test:e2e",
+		"test:unit": "bunx --bun bun test",
+		"test:integration": "bunx --bun playwright test",
+		"test:e2e": "playwright test"
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.2.5",
+		"@eslint/js": "^9.18.0",
+		"@playwright/test": "^1.49.1",
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"@types/bun": "^1.1.17",
+		"autoprefixer": "^10.4.20",
+		"drizzle-kit": "^0.30.2",
+		"eslint": "^9.18.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.46.1",
+		"globals": "^15.14.0",
+		"mdsvex": "^0.11.2",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.10",
+		"svelte": "^5.19.0",
+		"svelte-check": "^4.1.4",
+		"tailwindcss": "^4.0.12",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5.7.3",
+		"vite": "^5.4.11",
+		"vitest": "^2.1.8"
+	},
+	"dependencies": {
+		"@inlang/paraglide-sveltekit": "^0.11.5",
+		"@tailwindcss/container-queries": "^0.1.1",
+		"@sitis/config__tailwind": "*",
+		"@sitis/tools__js": "*",
+		"@sitis/ui__svelte": "*"
+	}
+}
