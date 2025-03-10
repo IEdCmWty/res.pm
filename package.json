@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "bunx --bun vite dev && build:tailwind:watch",
 		"build": "bunx --bun vite build && svelte-kit sync && svelte-package && npm run build:tailwind",
-		"build:tailwind": "npx @tailwindcss/cli -i ./src/app.css -o ./dist/style.css",
+		"build:tailwind": "npx @tailwindcss/cli -i ./src/app.css -o ./build/style.css",
 		"prepare": "bunx --bun prettier --write . && eslint . && svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"test": "bunx --bun test:integration && bunx --bun test:unit && bunx --bun test:e2e",
 		"test:unit": "bunx --bun bun test",
