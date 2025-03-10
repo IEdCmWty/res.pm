@@ -1,5 +1,5 @@
 <script>
-	import { UI_HERO_BANNER } from '$lib/ui/hero_banner';
+	import { UI_BG_GRADIENT__GRAINY } from '@sitis/ui__svelte/UI_BG_GRADIENT__GRAINY';
 	import { UI_BUTTON } from '@sitis/ui__svelte/UI_BUTTON';
 
 	let { children } = $props();
@@ -25,7 +25,7 @@
 				variant="outlined">Contacts</UI_BUTTON
 			>
 		</div>
-		<UI_HERO_BANNER />
+		<UI_BG_GRADIENT__GRAINY />
 	</div>
 
 	<article class="article my-8 w-full max-w-5xl self-center sm:my-16">
