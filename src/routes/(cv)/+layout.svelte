@@ -28,7 +28,7 @@
 		<UI_HERO_BANNER />
 	</div>
 
-	<article class="article my-8 w-full max-w-[1200px] self-center sm:my-16">
+	<article class="article my-8 w-full max-w-5xl self-center sm:my-16">
 		{@render children()}
 	</article>
 </div>
