@@ -34,7 +34,7 @@ Thumbs.db
 
 # Build outputs
 .next/
-out/
+out
 dist
 
 
