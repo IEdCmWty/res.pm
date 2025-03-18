@@ -5432,16 +5432,15 @@
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   }
 }
-::selection {
-  color: var(--color-zinc-50);
-  background-color: var(--color-green-600);
-  @media (prefers-color-scheme: dark) {
-    color: var(--color-zinc-950);
-    background-color: var(--color-green-500);
-  }
-}
 pre {
   font-family: var(--font-mono);
+}
+.article > p:first-of-type::first-letter {
+  float: left;
+  margin-right: 1rem;
+  font-size: var(--text-xl-h1);
+  line-height: var(--tw-leading, var(--text-xl-h1--line-height));
+  font-weight: bold;
 }
 .article {
   display: flex;
@@ -5505,13 +5504,6 @@ pre {
     @media print {
       color: var(--color-blue-600);
     }
-  }
-  p:first-child::first-letter {
-    float: left;
-    margin-right: 1rem;
-    font-size: var(--text-xl-h1);
-    line-height: var(--tw-leading, var(--text-xl-h1--line-height));
-    font-weight: bold;
   }
   table {
     border-top: 1px solid color-mix(in oklab, var(--color-zinc-600) 15%, transparent);
