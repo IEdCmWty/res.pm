@@ -256,7 +256,7 @@
     --container-5xl: 64rem;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --radius-xl: 0.75rem;
+    --radius-3xl: 1.5rem;
     --animate-bounce: bounce 1s infinite;
     --blur-sm: 8px;
     --blur-xl: 24px;
@@ -689,6 +689,9 @@
   }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
   }
   .whitespace-nowrap {
     white-space: nowrap;
@@ -1855,7 +1858,7 @@
     --container-sm: 24rem;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --radius-xl: 0.75rem;
+    --radius-3xl: 1.5rem;
     --animate-bounce: bounce 1s infinite;
     --blur-sm: 8px;
     --blur-xl: 24px;
@@ -1888,8 +1891,6 @@
     --text-xs-h5--line-height: 16px;
     --text-xs-h6: 12px;
     --text-xs-h6--line-height: 16px;
-    --text-xs-headline: 14px;
-    --text-xs-headline--line-height: 19px;
     --text-xs-hero: 31px;
     --text-xs-hero--line-height: 31px;
     --text-sm-body: 15px;
@@ -1908,8 +1909,6 @@
     --text-sm-h5--line-height: 18px;
     --text-sm-h6: 12px;
     --text-sm-h6--line-height: 16px;
-    --text-sm-headline: 15px;
-    --text-sm-headline--line-height: 20px;
     --text-sm-hero: 35px;
     --text-sm-hero--line-height: 35px;
     --text-md-body: 16px;
@@ -1928,8 +1927,6 @@
     --text-md-h5--line-height: 19px;
     --text-md-h6: 12px;
     --text-md-h6--line-height: 16px;
-    --text-md-headline: 16px;
-    --text-md-headline--line-height: 21px;
     --text-md-hero: 39px;
     --text-md-hero--line-height: 39px;
     --text-lg-body: 17px;
@@ -1948,8 +1945,6 @@
     --text-lg-h5--line-height: 20px;
     --text-lg-h6: 13px;
     --text-lg-h6--line-height: 18px;
-    --text-lg-headline: 17px;
-    --text-lg-headline--line-height: 22px;
     --text-lg-hero: 43px;
     --text-lg-hero--line-height: 43px;
     --text-2lg-body: 19px;
@@ -1968,8 +1963,6 @@
     --text-2lg-h5--line-height: 22px;
     --text-2lg-h6: 15px;
     --text-2lg-h6--line-height: 20px;
-    --text-2lg-headline: 19px;
-    --text-2lg-headline--line-height: 24px;
     --text-2lg-hero: 47px;
     --text-2lg-hero--line-height: 47px;
     --text-3lg-body: 21px;
@@ -1988,8 +1981,6 @@
     --text-3lg-h5--line-height: 24px;
     --text-3lg-h6: 17px;
     --text-3lg-h6--line-height: 22px;
-    --text-3lg-headline: 21px;
-    --text-3lg-headline--line-height: 26px;
     --text-3lg-hero: 51px;
     --text-3lg-hero--line-height: 51px;
     --text-4lg-body: 23px;
@@ -2008,8 +1999,6 @@
     --text-4lg-h5--line-height: 26px;
     --text-4lg-h6: 19px;
     --text-4lg-h6--line-height: 24px;
-    --text-4lg-headline: 23px;
-    --text-4lg-headline--line-height: 29px;
     --text-4lg-hero: 55px;
     --text-4lg-hero--line-height: 55px;
     --text-xl-body: 24px;
@@ -2028,8 +2017,6 @@
     --text-xl-h5--line-height: 36px;
     --text-xl-h6: 24px;
     --text-xl-h6--line-height: 28px;
-    --text-xl-headline: 24px;
-    --text-xl-headline--line-height: 24px;
     --text-xl-hero: 120px;
     --text-xl-hero--line-height: 120px;
   }
@@ -2442,14 +2429,14 @@
   .\!rounded-none {
     border-radius: 0 !important;
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
   .rounded-none {
     border-radius: 0;
-  }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -3379,10 +3366,6 @@
     font-size: var(--text-2lg-h6);
     line-height: var(--tw-leading, var(--text-2lg-h6--line-height));
   }
-  .text-2lg-headline {
-    font-size: var(--text-2lg-headline);
-    line-height: var(--tw-leading, var(--text-2lg-headline--line-height));
-  }
   .text-2lg-hero {
     font-size: var(--text-2lg-hero);
     line-height: var(--tw-leading, var(--text-2lg-hero--line-height));
@@ -3418,10 +3401,6 @@
   .text-3lg-h6 {
     font-size: var(--text-3lg-h6);
     line-height: var(--tw-leading, var(--text-3lg-h6--line-height));
-  }
-  .text-3lg-headline {
-    font-size: var(--text-3lg-headline);
-    line-height: var(--tw-leading, var(--text-3lg-headline--line-height));
   }
   .text-3lg-hero {
     font-size: var(--text-3lg-hero);
@@ -3459,10 +3438,6 @@
     font-size: var(--text-4lg-h6);
     line-height: var(--tw-leading, var(--text-4lg-h6--line-height));
   }
-  .text-4lg-headline {
-    font-size: var(--text-4lg-headline);
-    line-height: var(--tw-leading, var(--text-4lg-headline--line-height));
-  }
   .text-4lg-hero {
     font-size: var(--text-4lg-hero);
     line-height: var(--tw-leading, var(--text-4lg-hero--line-height));
@@ -3498,10 +3473,6 @@
   .text-lg-h6 {
     font-size: var(--text-lg-h6);
     line-height: var(--tw-leading, var(--text-lg-h6--line-height));
-  }
-  .text-lg-headline {
-    font-size: var(--text-lg-headline);
-    line-height: var(--tw-leading, var(--text-lg-headline--line-height));
   }
   .text-lg-hero {
     font-size: var(--text-lg-hero);
@@ -3539,10 +3510,6 @@
     font-size: var(--text-md-h6);
     line-height: var(--tw-leading, var(--text-md-h6--line-height));
   }
-  .text-md-headline {
-    font-size: var(--text-md-headline);
-    line-height: var(--tw-leading, var(--text-md-headline--line-height));
-  }
   .text-md-hero {
     font-size: var(--text-md-hero);
     line-height: var(--tw-leading, var(--text-md-hero--line-height));
@@ -3578,10 +3545,6 @@
   .text-sm-h6 {
     font-size: var(--text-sm-h6);
     line-height: var(--tw-leading, var(--text-sm-h6--line-height));
-  }
-  .text-sm-headline {
-    font-size: var(--text-sm-headline);
-    line-height: var(--tw-leading, var(--text-sm-headline--line-height));
   }
   .text-sm-hero {
     font-size: var(--text-sm-hero);
@@ -3619,10 +3582,6 @@
     font-size: var(--text-xl-h6);
     line-height: var(--tw-leading, var(--text-xl-h6--line-height));
   }
-  .text-xl-headline {
-    font-size: var(--text-xl-headline);
-    line-height: var(--tw-leading, var(--text-xl-headline--line-height));
-  }
   .text-xl-hero {
     font-size: var(--text-xl-hero);
     line-height: var(--tw-leading, var(--text-xl-hero--line-height));
@@ -3658,10 +3617,6 @@
   .text-xs-h6 {
     font-size: var(--text-xs-h6);
     line-height: var(--tw-leading, var(--text-xs-h6--line-height));
-  }
-  .text-xs-headline {
-    font-size: var(--text-xs-headline);
-    line-height: var(--tw-leading, var(--text-xs-headline--line-height));
   }
   .text-xs-hero {
     font-size: var(--text-xs-hero);
@@ -4816,9 +4771,9 @@
       gap: calc(var(--spacing) * 2);
     }
   }
-  .xl\:rounded-xl {
+  .xl\:rounded-3xl {
     @media (width >= 80rem) {
-      border-radius: var(--radius-xl);
+      border-radius: var(--radius-3xl);
     }
   }
   .xl\:p-2 {
@@ -5551,10 +5506,29 @@ pre {
       color: var(--color-blue-600);
     }
   }
+  p:first-child::first-letter {
+    float: left;
+    margin-right: 1rem;
+    font-size: var(--text-xl-h1);
+    line-height: var(--tw-leading, var(--text-xl-h1--line-height));
+    font-weight: bold;
+  }
   table {
+    border-top: 1px solid color-mix(in oklab, var(--color-zinc-600) 15%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--color-zinc-600) 15%, transparent);
+    @media (prefers-color-scheme: dark) {
+      border-top: 1px solid color-mix(in oklab, var(--color-zinc-600) 45%, transparent);
+      border-bottom: 1px solid color-mix(in oklab, var(--color-zinc-600) 45%, transparent);
+    }
     @media (width <= 23rem) {
       overflow-x: auto;
       display: inline-block;
+    }
+    tr:hover {
+      background-color: color-mix(in oklab, var(--color-zinc-600) 5%, transparent);
+      @media (prefers-color-scheme: dark) {
+        background-color: color-mix(in oklab, var(--color-zinc-300) 15%, transparent);
+      }
     }
   }
   td {

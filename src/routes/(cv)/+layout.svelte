@@ -7,7 +7,7 @@
 
 <div class="flex flex-col items-center pb-16">
 	<div
-		class="hero-banner relative z-1 flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-12 text-center lg:gap-12 lg:p-40 print:text-black"
+		class="hero-banner relative z-1 flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-12 text-center font-serif lg:gap-12 lg:p-40 print:text-black"
 	>
 		<h1>Artem Attvud</h1>
 		<h2>🧿 Front-End Developer</h2>
