@@ -11,7 +11,6 @@
 	>
 		<h1>Artem Attvud</h1>
 		<h2>🧿 Front-End Developer</h2>
-		<h3>🐞 UX/UI Designer</h3>
 		<div class="flex flex-wrap justify-center gap-2 print:!hidden">
 			<UI_BUTTON color="contrast" onclick={() => window?.print()} proportion="lg"
 				>Download CV</UI_BUTTON
@@ -51,17 +50,6 @@
 			@media (width >= 64rem) {
 				font-size: var(--text-xl-h2);
 				line-height: var(--tw-leading, var(--text-xl-h2--line-height));
-			}
-		}
-		h3 {
-			font-weight: bold;
-			font-size: var(--text-lg-h3);
-			line-height: var(--tw-leading, var(--text-lg-h3--line-height));
-			text-decoration: line-through;
-			opacity: 50%;
-			@media (width >= 64rem) {
-				font-size: var(--text-xl-h3);
-				line-height: var(--tw-leading, var(--text-xl-h3--line-height));
 			}
 		}
 	}
