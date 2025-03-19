@@ -11,7 +11,6 @@
 	>
 		<h1>Artem Attvud</h1>
 		<h2>🧿 Senior Front-End Developer</h2>
-		<h3>🐞 Senior UX/UI Designer</h3>
 		<div class="flex flex-wrap justify-center gap-2">
 			<UI_BUTTON color="contrast" onclick={() => window?.print()} proportion="lg"
 				>Download CV</UI_BUTTON
