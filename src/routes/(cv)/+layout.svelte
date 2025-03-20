@@ -27,7 +27,7 @@
 		<UI_BG_GRADIENT__GRAINY />
 	</div>
 
-	<article class="article my-8 w-full max-w-5xl self-center sm:my-16">
+	<article class="article my-8 w-full max-w-5xl self-center sm:my-12">
 		{@render children()}
 	</article>
 </div>
