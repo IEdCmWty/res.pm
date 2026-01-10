@@ -1,9 +1,0 @@
-{
-	"/": [
-		"src/routes/+layout.js",
-		"src/routes/+layout.js"
-	],
-	"/demo/paraglide": [
-		"src/routes/+layout.js"
-	]
-}
