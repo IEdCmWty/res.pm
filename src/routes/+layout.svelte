@@ -1,11 +1,19 @@
-<script>
-	import { i18n } from '$lib/i18n';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	import '../app.css';
+<script lang="ts">
+	import { page } from '$app/state';
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
+	import './layout.css';
+	import favicon from '$lib/assets/favicon.png';
 
 	let { children } = $props();
 </script>
 
-<ParaglideJS {i18n}>
-	{@render children()}
-</ParaglideJS>
+<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+
+{@render children()}
+<div class="hidden">
+	{#each locales as locale}
+		<a href={localizeHref(page.url.pathname, { locale })}>
+			{locale}
+		</a>
+	{/each}
+</div>

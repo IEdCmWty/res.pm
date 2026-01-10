@@ -1,1 +1,1 @@
-export const env={"PUBLIC_BASE_PATH":"http://localhost:5173"}
+export const env={}
