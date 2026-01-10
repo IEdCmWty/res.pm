@@ -76,7 +76,7 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 ## Achievements
 
 - Architected and built full-stack applications using Hexagonal + DDD architecture with distributed monorepo packages
-- Developed CLI tools with Bun.js: FFmpeg video processor, AI content generator
+- Developed CLI tools with Bun.js
 - Led technical implementation of 6 CRM systems as Tech Lead, including one serving 2000+ users
 - Implemented AI-assisted development workflows using Spec-Driven Development (SDD) with Kiro IDE
 - Created reusable design systems and UI component libraries with automated screenshot testing
