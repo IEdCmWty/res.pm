@@ -4,7 +4,7 @@ description: "Senior Full Stack Developer & Software Architect with 7+ years of 
 ---
 
 <script>
-import { UiText, UiButton, UiRow, UiIcon, UiCard1, UiBgImage, UiBgAnimated } from '@repo/ui-svelte';
+import { UiText, UiButton, UiRow, UiIcon, UiCard1, UiBgImage, UiBgAnimated } from '@pkg/ui-svelte';
 </script>
 
 <svelte:head>
@@ -59,7 +59,7 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 
 | Category      | Technologies |
 |---------------|--------------|
-| Architecture  | Hexagonal Architecture, Domain-Driven Design (DDD), CQRS, Layered Architecture |
+| Architecture  | Hexagonal Architecture, DDD, CQRS, Event-Driven Architecture |
 | Languages     | TypeScript (strict), JavaScript (ES2024+) |
 | Runtimes      | Bun.js (primary), Node.js |
 | Frontend      | Svelte 5, SvelteKit, React, Next.js (App/Page router, RSC) |

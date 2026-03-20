@@ -19,7 +19,7 @@ export default defineConfig({
 		}
 	},
 	optimizeDeps: {
-		exclude: ['@repo/ui-svelte', '@repo/fe-svelte', '@repo/fe']
+		exclude: ['@pkg/ui-svelte', '@pkg/fe-svelte', '@pkg/fe']
 	},
 
 	test: {
