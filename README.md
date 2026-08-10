@@ -1,38 +1,39 @@
-# sv
+# res.pm — точка публикации, не исходник
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Этот репозиторий **не содержит кода сайта**. Здесь лежит только собранный артефакт (`build/`) и
+workflow, который отдаёт его в GitHub Pages.
 
-## Creating a project
+## Где живёт исходник
 
-If you're seeing this, you've probably already done this step. Congrats!
+`sitis-hq/sitis` → `apps/2-be-fe`.
 
-```sh
-# create a new project in the current directory
-npx sv create
+Он живёт в монорепо, потому что потребляет общий кит `@pkg/ui-svelte`. Второй независимый
+потребитель — единственный дешёвый способ не дать дизайн-системе сползти в «компоненты продукта»:
+пока потребитель один, продуктовое допущение, протащенное в кит, не на ком проявиться.
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Почему публикует всё-таки этот репозиторий
 
-## Developing
+GitHub Pages отдаёт один сайт на репозиторий, а на приватном репозитории Pages требует платного
+плана. Монорепо приватный — значит издателем обязан быть публичный репозиторий, и перенести
+публикацию туда нельзя в принципе.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+`deploy-pages` умеет публиковать только сайт того репозитория, в котором выполняется. Поэтому
+монорепо **кладёт сюда готовый `build/`**, а публикует его здешний `deploy.yml`.
 
-```sh
-npm run dev
+## Как это работает
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+1. изменение в `apps/2-be-fe/**` или `packages/ui-svelte/**` в монорепо;
+2. workflow `cv.yml` там собирает сайт и пушит `build/` сюда, в `master`;
+3. здешний `deploy.yml` ловит push и отдаёт `build/` в Pages.
 
-## Building
+Сообщение коммита несёт хеш монорепо, из которого собран артефакт, — по нему видно происхождение.
 
-To create a production version of your app:
+## Чего здесь делать не надо
 
-```sh
-npm run build
-```
+**Не править `build/` руками.** Он производный: следующая публикация перезапишет правку целиком, и
+она исчезнет без следа.
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+**Не возвращать сюда исходник.** До 2026-08-10 он здесь лежал — копией того, что в монорепо, — и
+за пять месяцев разошёлся с оригиналом, причём собрать его тут было нельзя: `package.json`
+объявлял workspace-зависимости, которых в этом репозитории нет. История коммитов до уборки эту
+копию сохраняет, если она зачем-то понадобится.
